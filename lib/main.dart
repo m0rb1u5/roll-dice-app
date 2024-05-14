@@ -13,9 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
-              colors:
+              colors: [Colors.blue, Colors.purple]
             ),
           ),
           child: const Center(
