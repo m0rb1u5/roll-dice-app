@@ -10,6 +10,8 @@ class GradientContainer extends StatelessWidget {
   static const Alignment startAlignment = Alignment.topLeft;
   static const Alignment endAlignment = Alignment.bottomRight;
 
+  void rollDice() {}
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -21,11 +23,18 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: Center(
-        child: Image.asset(
-          'assets/images/dice-2.png',
-          width: 200,
-        ),
-      ),
+          child: Column(
+        children: [
+          Image.asset(
+            'assets/images/dice-2.png',
+            width: 200,
+          ),
+          ElevatedButton(
+            onPressed: rollDice,
+            child: const Text('Roll Dice'),
+          )
+        ],
+      )),
     );
   }
 }
