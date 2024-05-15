@@ -4,8 +4,8 @@ import 'package:roll_dice_app/styled_text.dart';
 class GradientContainer extends StatelessWidget {
   const GradientContainer({super.key});
 
-  static const startAlignment = Alignment.topLeft;
-  static const endAlignment = Alignment.bottomRight;
+  static const Alignment startAlignment = Alignment.topLeft;
+  static const Alignment endAlignment = Alignment.bottomRight;
 
   @override
   Widget build(BuildContext context) {
