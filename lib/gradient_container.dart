@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:roll_dice_app/styled_text.dart';
 
 class GradientContainer extends StatelessWidget {
   const GradientContainer({required this.colors, super.key});
+
+  GradientContainer.purple({super.key}) : colors = [Colors.blue, Colors.purple];
 
   final List<Color> colors;
 
@@ -12,16 +13,17 @@ class GradientContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration:  BoxDecoration(
+      decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: colors,
           begin: startAlignment,
           end: endAlignment,
         ),
       ),
-      child: const Center(
-        child: StyledText(
-          text: "Hello World!",
+      child: Center(
+        child: Image.asset(
+          'assets/images/dice-2.png',
+          width: 200,
         ),
       ),
     );
