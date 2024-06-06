@@ -1,4 +1,4 @@
-# Flutter: Expense Tracker App
+# Flutter: Roll Dice App
 
 ## Pre-requirements
 
